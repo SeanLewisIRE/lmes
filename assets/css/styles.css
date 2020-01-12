@@ -1,0 +1,33 @@
+
+/* Homepage */
+/* Carousel  */
+
+/* About Us*/
+
+.about-us-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Info */
+
+.info-contanier {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-piece {
+
+}
+
+/* Companies */
+
+.companies-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.companies-container img {
+    max-height: 125px;
+    max-width: 125px;
+}
