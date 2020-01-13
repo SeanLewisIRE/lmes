@@ -1,11 +1,19 @@
-
+/* Global Styles */
+body {
+    background-color: #4169e1!important;
+}
 /* Homepage */
+/* NavBar */
+nav {
+    
+}
+
 /* Carousel  */
 
 /* About Us*/
 
 .about-us-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -14,6 +22,17 @@
 .info-contanier {
     display: flex;
     flex-direction: column;
+    background-color: #D3D3D3;
+    width: 90%;
+    margin: 20px auto 20px auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.info-contanier p{
+    width: 96px;
+    text-align: center;
 }
 
 .info-piece {
@@ -25,6 +44,12 @@
 .companies-container {
     display: flex;
     flex-direction: column;
+    background-color: #D3D3D3;
+    width: 90%;
+    margin: 20px auto 20px auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 .companies-container img {
