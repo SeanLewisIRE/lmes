@@ -11,16 +11,38 @@ body {
 
 /* NavBar */
 nav {
-    
+    color: #385dc9;
+}
+
+.navbar-toggler {
+    background: red;
+}
+
+.lmes_logo {
+    width: 42px;
+    height: 42px;
 }
 
 /* Carousel  */
-
+.carousel-inner {
+    border-radius: 2px;
+}
 /* About Us*/
 
 .about-us-container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+}
+
+.about-us-container > h1 {
+    padding: 7.5px 0;
+    margin: 0 0;
+    font-family: 'K2D', sans-serif;
+}
+
+.about-us-container > p {
+    font-family: 'Roboto', sans-serif;
+    color: #5c646b;
 }
 
 /* Info */
@@ -29,21 +51,26 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 90%;
+    width: 80%;
     margin: 20px auto 20px auto;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    border: solid 1px #385dc9;
+    box-shadow: 1px 1px 4px 2px rgba(56,93,201,0.4);
 }
 
 .info-contanier p{
-    width: 96px;
+    width: 86px;
     text-align: center;
+    font-size: 0.9em;
+    line-height: 95%
 }
 
 .info-piece {
-
+    padding: 10px 0;
 }
+
 
 /* Companies */
 
@@ -51,16 +78,23 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 90%;
+    width: 80%;
     margin: 20px auto 20px auto;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    border: solid 1px #385dc9;
+    box-shadow: 1px 1px 4px 2px rgba(56,93,201,0.4);
 }
 
 .companies-container img {
+    min-height: 125px;
+    min-width: 125px;
     max-height: 125px;
     max-width: 125px;
+    border-radius: 25%;
+    margin: 5px 0;
+    object-fit: contain;
 }
 
 /* Case Studies */
