@@ -7,6 +7,10 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
+.header-font {
+    font-family: 'K2D', sans-serif;
+} 
 /* Homepage */
 
 /* NavBar */
@@ -29,18 +33,18 @@ nav {
 }
 /* About Us*/
 
-.about-us-container {
+.content-container {
     width: 80%;
     margin: 0 auto;
 }
 
-.about-us-container > h1 {
+.content-container > h1 {
     padding: 7.5px 0;
     margin: 0 0;
     font-family: 'K2D', sans-serif;
 }
 
-.about-us-container > p {
+.content-container p {
     font-family: 'Roboto', sans-serif;
     color: #5c646b;
 }
@@ -97,12 +101,13 @@ nav {
     object-fit: contain;
 }
 
+/* Services */
+
 /* Case Studies */
 
-.project-container {
-    height: 100vh;
-    width: 90%;
-    margin: 20px auto 20px auto;
+.card {
+    margin: 20px auto;
+    
 }
 
 /* Contact Us */
