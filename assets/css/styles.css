@@ -11,7 +11,11 @@ body {
 .header-font {
     font-family: 'K2D', sans-serif;
 } 
-/* Homepage */
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
 
 /* NavBar */
 nav {
@@ -26,12 +30,14 @@ nav {
     width: 42px;
     height: 42px;
 }
+/* Homepage */
 
-/* Carousel  */
+/* HP Carousel  */
 .carousel-inner {
     border-radius: 2px;
 }
-/* About Us*/
+
+/* HP About Us*/
 
 .content-container {
     width: 80%;
@@ -49,7 +55,7 @@ nav {
     color: #5c646b;
 }
 
-/* Info */
+/* HP Info */
 
 .info-contanier {
     display: flex;
@@ -82,7 +88,7 @@ nav {
 }
 
 
-/* Companies */
+/* HP Companies */
 
 .companies-container {
     display: flex;
@@ -110,10 +116,25 @@ nav {
 /* Services */
 
 /* Case Studies */
+.case-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25em;
+}
 
-.card {
-    margin: 20px auto;
-    
+.case-body {
+    padding-bottom: 0.75em;
+}
+
+.carousel-inner {
+    max-height: 325px;
+    min-height: 325px;
+}
+
+.carousel-inner img {
+    min-height: 325px;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Contact Us */
@@ -131,7 +152,73 @@ input[type=text] {
     flex-direction: column;
 }
 
-.map {
+.location-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container{
+    margin: 0 auto;
+}
+
+.map-container iframe{
     height: 350px;
     width: 350px;
+}
+
+/* Media Queries */
+/* Tablet */
+
+@media all and (min-width: 768px) {
+
+/* Case Studies */
+
+    .case-container  {
+        flex-direction: row;
+        margin: 0.25em 0 1.5em 0
+    }
+
+    .case-body{
+        width: 50%;
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    .cs-carousel{
+        width: 50%;
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    .case-container:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+/* Contact Us */
+
+    .location-container{
+    display: flex;
+    flex-direction: row;
+
+}
+}
+
+/* Medium Laptops */
+@media all and (min-width: 992px) {
+
+/* Homepage Studies */
+
+/* HP Info */
+
+.info-contanier {
+    flex-direction: row;
+}
+
+
+
+/* HP Companies */
+
+.companies-container {
+    flex-direction: row;
+}
+
+
 }
