@@ -1,6 +1,14 @@
 /* Global Styles */
+html {
+  box-sizing: border-box;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
 body {
-    /* background-color: #1543ce!important; */
+  margin: 0;
 }
 
 .wrap {
@@ -19,11 +27,12 @@ main {
 
 /* NavBar */
 nav {
-    color: #385dc9;
+    background-color: #0D1F3C
+;
 }
 
 .navbar-toggler {
-    background: red;
+    background: white!important;
 }
 
 .lmes_logo {
@@ -32,27 +41,28 @@ nav {
 }
 /* Homepage */
 
-/* HP Carousel  */
-.carousel-inner {
-    border-radius: 2px;
+.wave-container {
+    height: 55vh;
 }
 
-/* HP About Us*/
-
-.content-container {
-    width: 80%;
-    margin: 0 auto;
+.wave {
+  position: relative;
+  display: inline-block;
+  transition: transform 150ms ease-in-out;
+  height: 100%;
 }
 
-.content-container > h1, h2 {
-    padding: 7.5px 0;
-    margin: 0 0;
-    font-family: 'K2D', sans-serif;
+.wave img {
+   display: block;
+   max-width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
-.content-container p {
-    font-family: 'Roboto', sans-serif;
-    color: #5c646b;
+.wave svg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* HP Info */
@@ -60,14 +70,11 @@ nav {
 .info-contanier {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    width: 80%;
-    margin: 20px auto 20px auto;
+    background-color: #296FE4;
+    margin: 0 auto;
+    padding: 20px 0;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    border: solid 1px #385dc9;
-    box-shadow: 1px 1px 4px 2px rgba(56,93,201,0.4);
 }
 
 .info-contanier p{
@@ -87,6 +94,23 @@ nav {
     list-style-type: none;
 }
 
+/* HP About Us*/
+
+.content-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-container > h1, h2 {
+    padding: 7.5px 0;
+    margin: 0 0;
+    font-family: 'K2D', sans-serif;
+}
+
+.content-container p {
+    font-family: 'Roboto', sans-serif;
+    color: #5c646b;
+}
 
 /* HP Companies */
 
