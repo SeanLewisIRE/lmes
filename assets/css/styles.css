@@ -126,7 +126,9 @@ nav {
 .main-writeup {
     display: flex;
     flex-direction: column;
+    margin-top: 1em;
 }
+
 
 /* HP Companies */
 
@@ -171,6 +173,12 @@ nav {
     background-color: #296FE4;
     padding: 0.5em;
     border-radius: 22px;
+}
+
+.contact-text a:hover {
+    text-decoration: none;
+    border: 1px solid white;
+    color: #0D1F3C;
 }
 
 /* Services */
@@ -230,6 +238,104 @@ input[type=text] {
 /* Tablet */
 
 @media all and (min-width: 768px) {
+
+    /* Homepage */
+
+.wave-container {
+    height: 55vh;
+    background: linear-gradient(rgb(13, 31, 60, 0.5), rgb(13, 31, 60, 0.5)), url("../images/general/G1.JPG") no-repeat top center;
+    background-size: cover;
+}
+
+.wave {
+  position: relative;
+  display: inline-block;
+  transition: transform 150ms ease-in-out;
+  height: 100%;
+}
+
+.wave svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.intro-box{
+    top: 27.5%;
+    left: 20%;
+    max-width: 25%;
+    padding-left: 5%;
+    text-align: left;
+}
+
+.intro-box p {
+    font-size: 0.85em;
+    
+}
+
+/* HP Info */
+
+.info-contanier {
+    justify-content: space-around;
+}
+
+.info-contanier p{
+    font-size: 1em;
+    line-height: 100%;
+}
+
+.info-piece img {
+    height: 56px;
+    width: 56px;
+}
+
+.info-piece p {
+    margin-top: 0.4em;
+}
+
+/* HP Main write up*/
+
+.content-container {
+    width: 80%;
+    padding: 0 0.35em;
+}
+
+.main-writeup {
+    flex-direction: row;
+    width: 80%;
+    margin: 1.5em auto 0 auto;
+}
+
+.main-writeup p {
+    font-size: 1em;
+}
+
+/* HP Companies */
+
+.companies-container {
+    justify-content: space-around;
+    margin: 1.5em 0;
+}
+
+.companies-container img {
+    margin: 0 10px;
+}
+
+/* HP Contact */
+
+.home-page-contact {
+    background-color: #0D1F3C;
+}
+
+.contact-text p {
+    font-size: 1em;
+    margin-bottom: 1.75em;
+}
+
+.contact-text a {
+    padding: 0.75em;
+}
+    
 
 /* Case Studies */
 
