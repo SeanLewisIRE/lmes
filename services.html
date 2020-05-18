@@ -16,7 +16,7 @@
 <!-- List inspo:
 https://ui-patterns.com/users/1/collections/lists/screenshots -->
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <div class='container'>
             <a class="navbar-brand" href="#"><img class="lmes_logo" src="assets/images/logos/lmes.png" alt="LMES logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -25,10 +25,10 @@ https://ui-patterns.com/users/1/collections/lists/screenshots -->
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Services<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -41,62 +41,90 @@ https://ui-patterns.com/users/1/collections/lists/screenshots -->
             </div>
         </div>
     </nav>
+    
+    <div class="wave-container">
+        <div class="intro-box">
+            <h5>LMES</h5>
+            <p>The LMES team have been involved in major telecommunication and power projects throughout Ireland and the UK.
+            </p>
+        </div>
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M-0.56,137.66 C300.79,138.64 107.78,14.30 500.00,13.31 L506.20,-4.44 L0.00,0.00 Z"
+                style="stroke: none; fill: rgba(13, 31, 60, 1);"></path>
+        </svg>
+    </div>
 
     <main>
-        <div class="content-container">
-            <h1>Services</h1>
-
-            <p>LMES offers a wide range of services which have been utilised 
-                in major telecommunication and power projects throughout
-                Ireland and the UK for contractors and industrial clients.
-            </p>
-            <p>The scope of work and equipment covers all types of cable installations from blown fibre
-            projects to HV electric cable installations. We have an excellent reputation within the
-            industry for our modern and well maintained equipment, our high standard of workmanship
-            and our completion of works on time, safely and professionally.
-            </p>
-
-            <h3 class="header-font">Services</h3>
-
-            <div class='service-container'>
-                <h5>Cable Pulling And Installation</h5>
-                <ul>
-                    <li>Cable Pulling 10kv to 33kv</li>
-                    <li>Cable Pulling & Installation 110kv to 220kv</li>
-                    <li>Fibre Installation</li>
-                </ul>
-                <p>All cable pulling is carried out in line with Eirgird and ESB Networks specifications. Full data capture of
-                    forces,
-                    speed and distance of each pull is recorded and provided.
-                </p>
+        
+            <div class="services-intro">
+                <div class="services-intro-text">
+                    <h3>Services</h3>
+                    <p>LMES offers a wide range of services which have been utilised 
+                        in major telecommunication and power projects throughout
+                        Ireland and the UK for contractors and industrial clients.
+                    </p>
+                    <p>The scope of work and equipment covers all types of cable installations from blown fibre
+                    projects to HV electric cable installations. We have an excellent reputation within the
+                    industry for our modern and well maintained equipment, our high standard of workmanship
+                    and our completion of works on time, safely and professionally.
+                    </p>
+                </div>
             </div>
 
-            <div class='service-container'>
-                <h5>Duct Testing & Proving</h5>
-                <p>Testing of existing or newly installed ducting by mandrel, brush and sponge proving and cleaning to Eirgird and ESB Networks specifications. Data recorded during this process is force, speed and distance for quality records.
-                </p>
-            </div>
+        <div class="services-wrap">
+            <div class="services-container">
+                    <div class="column-1">
+                    <div class='service-container'>
+                        <h5>Cable Pulling And Installation</h5>
+                        <ul>
+                            <li>Cable Pulling 10kv to 33kv</li>
+                            <li>Cable Pulling 110kv to 220kv</li>
+                            <li>Fibre Pulling</li>
+                        </ul>
+                        <p>All cable pulling is carried out in line with Eirgird and ESB Networks specifications. Full data capture of
+                            forces,
+                            speed and distance of each pull is recorded and provided.
+                        </p>
+                    </div>
 
-            <div class='service-container'>
-                <h5>Duct Trenching & Civil Works</h5>
-                <p>The installation of LV to HV ducting to Eirgird and ESB Networks Specifications including communications ducting
-                </p>
-            </div>
+                    <div class='service-container'>
+                        <h5>Duct Testing & Proving</h5>
+                        <p>Testing of existing or newly installed ducting by mandrel, brush and sponge proving and cleaning to Eirgird and ESB Networks specifications. Data recorded during this process is force, speed and distance for quality records.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="column-2">
+                    <div class='service-container'>
+                        <h5>Duct Trenching & Civil Works</h5>
+                        <p>The installation of LV to HV ducting to Eirgird and ESB Networks Specifications including communications ducting
+                        </p>
+                    </div>
 
-            <div class='service-container'>
-                <h5>Winch Calibration</h5>
-                <p>All winch and drum carrier plant used are owned by LMES and calibrated yearly. Calibration certs are issued before each
-                job is started.
-                </p>
-            </div>
+                    <div class='service-container'>
+                        <h5>Winch Calibration</h5>
+                        <p>All winch and drum carrier plant used are owned by LMES and calibrated yearly. Calibration certs are issued before each
+                        job is started.
+                        </p>
+                    </div>
 
-            <div class='service-container'>
-                <h5>Winch Hire</h5>
-                <p>LMES also hires out their plant to other experienced cable pulling contractors if required.
-                </p>
+                    <div class='service-container'>
+                        <h5>Winch Hire</h5>
+                        <p>LMES also hires out their plant to other experienced cable pulling contractors if required.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
+    <div class="end-page-contact">
+        <div class="contact-text">
+            <h4>Let's work together</h4>
+            <p>Drop us a message and we will get back to you as soon as possible</p>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
 
     <footer>
 
