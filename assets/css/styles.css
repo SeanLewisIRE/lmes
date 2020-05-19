@@ -433,7 +433,7 @@ flex-direction: row;
 
 }
 
-/* Medium Laptops */
+/* Medium Screens */
 @media all and (min-width: 992px) {
 
 /* Homepage Studies */
@@ -463,6 +463,7 @@ flex-direction: row;
 
 .services-container {
     flex-direction: row;
+    justify-content: space-around;
     width: 65%;
 }
 
@@ -492,5 +493,19 @@ flex-direction: row;
     padding-left: 0.5em;
 }
 
+
+}
+
+
+@media all and (min-width: 1200px) {
+    /* Homepage Studies */
+
+.info-container{
+    width: 65%;
+}
+
+.main-writeup {
+    width: 70%;
+}
 
 }
