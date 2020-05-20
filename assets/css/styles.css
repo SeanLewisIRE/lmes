@@ -223,6 +223,11 @@ nav {
 
 /* Case Studies */
 
+.case-studies {
+    display: flex;
+    flex-direction: column;
+}
+
 .card-overlay {
     background: #296FE4;
     opacity: 0.8;
@@ -240,6 +245,15 @@ nav {
 
 .card-subtitle {
     opacity: 0.8;
+}
+
+.case-container {
+    margin: 2em 0
+}
+
+.carousel-inner {
+    max-width: 700px;
+    max-height: 300px;
 }
 
 /* Contact Us */
@@ -475,6 +489,17 @@ flex-direction: row;
     padding-left: 0.5em;
 }
 
+    /* Case Studies */
+.case-studies {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.case-container {
+    margin: 2.5em 0em;
+    padding: 0 1.5em;
+}
+
 
 }
 
@@ -490,4 +515,5 @@ flex-direction: row;
     width: 70%;
 }
 
+    /* Case Studies */
 }
