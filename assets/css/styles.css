@@ -126,10 +126,14 @@ nav {
     margin: 0 auto;
 }
 
+.content-container h1 {
+    font-size: 2em;
+}
+
 .main-writeup {
     display: flex;
     flex-direction: column;
-    margin-top: 1em;
+    margin-top: 2.5em;
 }
 
 
@@ -247,6 +251,10 @@ nav {
     opacity: 0.8;
 }
 
+.card {
+    height: 535px;
+}
+
 .case-container {
     margin: 2em 0
 }
@@ -254,6 +262,11 @@ nav {
 .carousel-inner {
     max-width: 700px;
     max-height: 300px;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
 }
 
 /* Contact Us */
@@ -347,14 +360,13 @@ input[type=text] {
 /* HP Main write up*/
 
 .content-container {
-    width: 80%;
     padding: 0 0.35em;
 }
 
 .main-writeup {
     flex-direction: row;
     width: 90%;
-    margin: 1.5em auto 0 auto;
+    margin: 3.5em auto 1.5em auto;
 }
 
 .main-writeup p {
@@ -448,7 +460,6 @@ flex-direction: row;
     flex-direction: row;
 }
 
-
 /* HP Companies */
 
 .companies-container {
@@ -493,11 +504,16 @@ flex-direction: row;
 .case-studies {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .case-container {
     margin: 2.5em 0em;
     padding: 0 1.5em;
+}
+
+.case-container {
+    margin: 2.5em 0em;
 }
 
 
@@ -507,13 +523,16 @@ flex-direction: row;
 @media all and (min-width: 1200px) {
     /* Homepage Studies */
 
-.info-container{
-    width: 65%;
-}
+    .info-container{
+        width: 65%;
+    }
 
-.main-writeup {
-    width: 70%;
-}
+    .main-writeup {
+        width: 70%;
+    }
 
     /* Case Studies */
+    .rm-margin {
+        margin: 0 0 2.5em
+    }
 }
