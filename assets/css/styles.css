@@ -136,7 +136,6 @@ nav {
     margin-top: 2.5em;
 }
 
-
 /* HP Companies */
 
 .companies-container {
@@ -289,13 +288,32 @@ input[type=text] {
     flex-direction: column;
 }
 
-.map-container{
-    margin: 0 auto;
+.map-container {
+    height: 330px; 
 }
 
-.map-container iframe{
-    height: 350px;
-    width: 350px;
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.address-container {
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+.address {
+    width: 80%;
+    margin: 2em auto;
+}
+
+.row {
+    margin: 1em 0;
+}
+
+.contact-info h2 {
+    font-size: 1.75em;
+    min-width: 200px;
 }
 
 /* Media Queries */
@@ -398,7 +416,9 @@ input[type=text] {
 
 /* Case Studies */
 
-
+.row {
+    margin: 2em 0 1em 0;
+}
 
 /* Services     */
 
@@ -437,6 +457,22 @@ input[type=text] {
 .location-container{
 display: flex;
 flex-direction: row;
+width: 80%;
+margin: 0 auto 1em auto;
+}
+
+.map-container {
+    flex-grow: 3;
+}
+
+.address-container {
+    width: 0%;
+    flex-grow: 4;
+}
+
+.address {
+    width: 80%;
+    margin: 2em auto;
 }
 
 }
@@ -534,5 +570,11 @@ flex-direction: row;
     /* Case Studies */
     .rm-margin {
         margin: 0 0 2.5em
+    }
+
+    /* Contact */
+
+    .content-container {
+        width: 70%;
     }
 }

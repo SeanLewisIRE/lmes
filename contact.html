@@ -10,90 +10,116 @@
     <!-- CDN Links -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>LMES</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class='container'>
-            <a class="navbar-brand" href="#"><img class="lmes_logo" src="assets/images/logos/lmes.png" alt="LMES logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="case_studies.html">Case Studies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact Us<span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <div class='container'>
+        <a class="navbar-brand" href="#"><img class="lmes_logo" src="assets/images/logos/lmes.png" alt="LMES logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="case_studies.html">Case Studies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
+<div class="wave-container">
+    <div class="intro-box">
+        <h5>LMES</h5>
+        <p>The LMES team have been involved in major telecommunication and power projects throughout Ireland and the UK.
+        </p>
+    </div>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M-0.56,137.66 C300.79,138.64 107.78,14.30 500.00,13.31 L506.20,-4.44 L0.00,0.00 Z"
+            style="stroke: none; fill: rgba(13, 31, 60, 1);"></path>
+    </svg>
+</div>
     
     <main class='content-container'>
-        <h1>Contact Us</h1>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="contact-info">
-                        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
-                        <h2>Contact Us</h2>
-                        <h4>We would love to hear from you !</h4>
-                    </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div class="contact-info">
+                    <h2>
+                        <svg class="bi bi-envelope" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
+                        <path
+                            d="M.05 3.555C.017 3.698 0 3.847 0 4v.697l5.803 3.546L0 11.801V12c0 .306.069.596.192.856l6.57-4.027L8 9.586l1.239-.757 6.57 4.027c.122-.26.191-.55.191-.856v-.2l-5.803-3.557L16 4.697V4c0-.153-.017-.302-.05-.445L8 8.414.05 3.555z" />
+                        </svg>
+                        Contact Us</h2>
+                        <br>
+                    <h4>We would love to hear from you !</h4>
                 </div>
-                <div class="col-md-9">
-                    <div class="contact-form">
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="fname">First Name:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
-                            </div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="fname">First Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
                         </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="lname">Last Name:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="lname">Last Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
                         </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="email">Email:</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="email">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                         </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="comment">Comment:</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" rows="5" id="comment"></textarea>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="comment">Comment:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
                         </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default">Submit</button>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-        <h4>Where to Find Us</h4>
+        </div>
+    </main>
+        
         <div class="location-container">
-            <address>
-                Barnane, <br>
-                Co. Tipperaery, <br>
-                Ireland
-            </address>
-            <a href="tel:+353871358182">089 8276 161</a>
+            <div class="address-container">
+                <div class="address">
+                    <h4>Where to Find Us</h4>
+                    <address>
+                        Barnane, <br>
+                        Co. Tipperaery, <br>
+                        Ireland
+                    </address>
+                    <p>Tel: <a href="tel:+353871358182">+353 89 8276 161</a></p>
+                </div>
+            </div>
+            
 
             <div class='map-container'>
                 <iframe 
@@ -103,10 +129,15 @@
             </div>
         </div>
 
-    </main>
-
+    <div class="end-page-contact">
+        <div class="contact-text">
+            <h4>Let's work together</h4>
+            <p>Drop us a message and we will get back to you as soon as possible</p>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
     <footer>
-
+    
     </footer>
     <!-- Scripts & CDNs -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
