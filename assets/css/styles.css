@@ -585,6 +585,11 @@ margin: 0 auto 1em auto;
 
 
 @media all and (min-width: 1200px) {
+
+    .footer-nav {
+    width: 60%;
+    }
+
     /* Homepage Studies */
 
     .info-container{
