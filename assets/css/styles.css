@@ -55,9 +55,9 @@ nav {
     background: white!important;
 }
 
-.lmes_logo {
-    width: 42px;
-    height: 42px;
+.lmes-logo {
+    width: 120px;
+    height: 35px;
 }
 /* Homepage */
 
@@ -93,9 +93,13 @@ nav {
     text-align: left;
 }
 
+.intro-box h1 {
+    font-size: 1.75em;
+    min-width: 230px;
+}
+
 .intro-box p {
-    font-size: 0.70em;
-    
+    font-size: 0.79em;
 }
 
 /* HP Info */
@@ -194,8 +198,8 @@ nav {
 .contact-text a {
     color: #fff;
     background-color: #296FE4;
-    padding: 0.5em;
-    border-radius: 22px;
+    padding: 0.65em;
+    border-radius: 100px;
 }
 
 .contact-text a:hover {
@@ -338,7 +342,16 @@ input[type=text] {
 
 @media all and (min-width: 768px) {
 
-    /* Homepage */
+/* Global */
+.intro-box h1 {
+    font-size: 2em;
+}
+
+.intro-box p {
+    font-size: 0.9em;
+}
+
+/* Homepage */
 
 .wave-container {
     height: 55vh;
@@ -362,7 +375,7 @@ input[type=text] {
 .intro-box{
     top: 27.5%;
     left: 20%;
-    max-width: 25%;
+    max-width: 27.5%;
     padding-left: 5%;
     text-align: left;
 }
@@ -497,6 +510,11 @@ margin: 0 auto 1em auto;
 /* Medium Screens */
 @media all and (min-width: 992px) {
 
+.lmes-logo {
+    width: 138px;
+    height: 40px;
+}
+
 .footer-nav {
     width: 70%;
 }
@@ -585,6 +603,15 @@ margin: 0 auto 1em auto;
 
 
 @media all and (min-width: 1200px) {
+
+    /* Global */
+    .intro-box h1 {
+        font-size: 2.5em;
+    }
+
+    .intro-box p {
+        font-size: 1em;
+    }
 
     .footer-nav {
     width: 60%;
