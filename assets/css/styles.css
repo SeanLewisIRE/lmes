@@ -144,6 +144,13 @@ nav {
     margin-top: 0.4em;
 }
 
+/* HP Carousel */
+
+.hp-car-img {
+    height: 230px;
+    object-fit: cover;
+}
+
 /* HP Main write up*/
 
 .content-container {
@@ -204,8 +211,9 @@ nav {
 
 .contact-text a:hover {
     text-decoration: none;
-    border: 1px solid white;
-    color: #0D1F3C;
+    color: inherit;
+    background-color: #2996e4;
+    transition: 0.25s;
 }
 
 /* Services */
@@ -279,12 +287,12 @@ nav {
     margin: 2em 0
 }
 
-.carousel-inner {
+.cs-car-inner {
     max-width: 700px;
     max-height: 300px;
 }
 
-.carousel-item img {
+.cs-img {
     height: 300px;
     object-fit: cover;
 }
@@ -335,6 +343,22 @@ input[type=text] {
 .contact-info h2 {
     font-size: 1.75em;
     min-width: 200px;
+}
+
+.email-send {
+    font-weight: bold;
+    width: 100px;
+    color: #fff;
+    background-color: #296FE4;
+    padding: 0.65em;
+    border-radius: 100px;
+}
+
+.email-send:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2996e4;
+    transition: 0.25s;
 }
 
 /* Media Queries */
@@ -405,6 +429,11 @@ input[type=text] {
     margin-top: 0.4em;
 }
 
+/* HP Carousel */
+
+.hp-car-img {
+    height: 430px;
+}
 /* HP Main write up*/
 
 .content-container {
@@ -539,6 +568,15 @@ margin: 0 auto 1em auto;
     flex-direction: row;
 }
 
+/* HP Carousel */
+
+.hp-car-wrap {
+    margin: 1em auto 0 auto;
+    width: 80%;
+    border: 1px solid #296FE4;
+    max-width: 1000px;
+}
+
 /* HP Companies */
 
 .companies-container {
@@ -627,6 +665,10 @@ margin: 0 auto 1em auto;
         width: 70%;
     }
 
+    /* Homepage Carousel */
+    .hp-car-img {
+        height: 530px;
+    }
     /* Case Studies */
     .rm-margin {
         margin: 0 0 2.5em
