@@ -14,6 +14,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/favicon.png">
+    <!-- EmailJS Setup -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_quIRoPTZmpH8wSJa4ta70");
+        })();
+    </script>
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    emailjs.sendForm('contact_service', 'contact_form', this);
+                });
+            }
+        </script>
     <title>LMES | Contact Us</title>
 </head>
 
@@ -74,29 +89,29 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-8">
-                <div class="contact-form">
+                <form id="contact-form" class="contact-form">
                     <div class="form-group">
                         <label class="control-label col-sm-5" for="fname">Name:</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="fname" placeholder="Enter Name" name="name">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter Name" name="sender_name">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-5" for="email">Email:</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="sender_email">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-5" for="email">Phone Number:</label>
+                        <label class="control-label col-sm-5" for="phone">Phone Number:</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" placeholder="Enter contact number" name="number">
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter contact number" name="sender_phone">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-5" for="comment">Comment:</label>
+                        <label class="control-label col-sm-5" for="message">Message:</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                            <textarea class="form-control" rows="5" id="message" name="message"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
@@ -104,7 +119,7 @@
                             <button type="submit" class="email-send" value="Send Email" onclick="sendEmail()">Submit</button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </main>
