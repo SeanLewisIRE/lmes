@@ -94,8 +94,8 @@ nav {
 }
 
 .intro-box h1 {
-    font-size: 1.75em;
-    min-width: 230px;
+    font-size: 1.70em;
+    min-width: 240px;
 }
 
 .intro-box p {
@@ -182,7 +182,6 @@ nav {
     width: 92px;
     height: 92px;
     object-fit: contain;
-    filter: grayscale(100%);
     margin: 0 7.5px;
 }
 
@@ -267,6 +266,30 @@ nav {
 
 .column-4 {
     margin-bottom: 4.5em;
+}
+
+/* Services Carousel */
+
+.services-car-img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.services-car-wrap {
+    height: 100%;
+    padding: 1em 0;
+}
+
+.services-car {
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+    border: 1px solid #F5F5F5;
+}
+
+.carousel-caption h5 {
+    color: #f5f5f5;
+    text-shadow: 1.5px 1.5px #000;
 }
 
 /* Case Studies */
@@ -364,6 +387,7 @@ input[type=text] {
     background-color: #296FE4;
     padding: 0.65em;
     border-radius: 100px;
+    border: 2px solid #0D1F3C;
 }
 
 .email-send:hover {
