@@ -417,6 +417,18 @@ input[type=text] {
     font-size: 0.9em;
 }
 
+.navbar-nav {
+    display: flex;
+    min-width: 431px;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    font-size: 1em;
+    letter-spacing: normal!important;
+    font-weight: bold;
+}
+
 /* Homepage */
 
 .wave-container {
@@ -662,7 +674,7 @@ margin: 0 auto 1em auto;
 }
 
 .services-intro-text{
-    width: 30%;
+    width: 50%;
     margin: 3.25em auto;
     font-size: 1em;
 }
@@ -739,6 +751,11 @@ margin: 0 auto 1em auto;
     .hp-car-img {
         height: 530px;
     }
+
+    .services-intro-text {
+        width: 40%;
+    }
+
     /* Case Studies */
     .rm-margin {
         margin: 0 0 2.5em
