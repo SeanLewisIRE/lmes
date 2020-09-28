@@ -28,7 +28,7 @@ body {
 }
 
 footer {
-    height: 60px;
+    height: 70px;
     width: 100%;
     background-color: #0D1F3C;
 }
@@ -39,14 +39,16 @@ footer {
     font-size: 0.9em;
     justify-content: space-around;
     text-align: center;
-    padding: 15px 0 0 0;
+    padding: 10px 0 0 0;
     color: #fff;
     margin: 0 auto;
     width: 90%;
 }
 
 .footer-nav > li {
-    min-width: 146px;
+    min-width: 100px;
+    max-width: 100px;
+    font-size: 0.9em;
 }
 
 /* NavBar */
@@ -434,6 +436,10 @@ input[type=text] {
     font-size: 1em;
     letter-spacing: normal!important;
     font-weight: bold;
+}
+
+.footer-nav > li {
+    min-width: 146px;
 }
 
 /* Homepage */
